@@ -1,0 +1,11 @@
+version: '2'
+services:
+    blockglobal-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/blockglobal/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=blockglobal
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
